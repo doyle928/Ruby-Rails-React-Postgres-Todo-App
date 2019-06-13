@@ -1,0 +1,88 @@
+.ui.segment {
+  border-radius: 3px;
+}
+
+.ui.celled.list>.item:first-child,
+.ui.celled.list>.item:last-child {
+  padding: 8px 0.214em
+}
+
+.ui.celled.list>.item,
+.ui.celled.list>.list {
+  padding: 8px 0.214em
+}
+
+
+.negative {
+  color: black;
+}
+
+.negative:hover,
+i.edit:hover {
+  color: rgb(199, 0, 0);
+}
+
+i.edit {
+  margin-right: 5px;
+}
+
+
+.ui.button {
+  background-color: #d33f8d;
+  color: white;
+  border-radius: 3px;
+  transition: all 0.4s;
+}
+
+.ui.button:hover {
+  background-color: black;
+  color: white;
+}
+
+.delete-button {
+  background-color: black !important;
+}
+
+.delete-button:hover {
+  background-color: red !important;
+}
+
+.ui.form input:not([type]),
+.ui.form input[type=text] {
+  background: #e6e6e6 !important;
+  color: #686868 !important;
+  font-weight: 700;
+  border: none;
+}
+
+.ui.form input:not([type]):focus,
+.ui.form input[type=text]:focus {
+  box-shadow: 0 0 0px rgba(211, 63, 141, 0.6);
+  animation: focus-fade .6s ease-in;
+}
+
+@keyframes focus-fade {
+  0% {
+      box-shadow: 0 0 2px rgba(211, 63, 141, 0.6);
+  }
+
+  100% {
+      box-shadow: 0 0 150px rgba(211, 63, 141, 0);
+  }
+}
+
+.ui.secondary.pointing.menu {
+  border: none;
+}
+
+.ui.secondary.pointing.menu h2,
+.content,
+h3,
+h1,
+.header {
+  cursor: default;
+}
+
+h1 {
+  font-size: 2.5rem;
+}

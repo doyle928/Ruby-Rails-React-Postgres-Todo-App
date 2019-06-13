@@ -1,0 +1,12 @@
+{
+    "name": "rails-react-todo-app",
+    "engines": {
+        "node": "12.4.0",
+        "yarn": "1.16.0"
+    },
+    "scripts": {
+        "build": "cd client && npm install && npm run build && cd ..",
+        "deploy": "cp -a client/build/. public/",
+        "postinstall": "npm run build && npm run deploy && echo 'Client built!'"
+    }
+}
